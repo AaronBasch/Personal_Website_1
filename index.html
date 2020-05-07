@@ -8,16 +8,59 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 700px;
+      }
+      a img {
+        width: 300px;
+      }
+      a img.hover {
+          display: none;
+      }
+      a img.default {
+          display: inherit;
+      }
+      a:hover img.hover {
+          display: inherit;
+      }
+      a:hover img.default {
+          display: none;
+      }
+      .links {
+        text-align: center;
       }
     </style>
   </head>
 
   <body>
+
     <div class="title-image">
       <img src="images/aaron-basch.PNG" alt="oh baby" class="center">
     </div>
+
+    <div class="links">
+
+      <a href="music.html">
+        <img class="default" src="images/music.PNG"/>
+        <img class="hover" src="images/music2.PNG"/>
+      </a>
+
+      <a href="scores.html">
+        <img class="default" src="images/scores.PNG"/>
+        <img class="hover" src="images/scores2.PNG"/>
+      </a>
+
+      <a href="about.html">
+        <img class="default" src="images/about.PNG"/>
+        <img class="hover" src="images/about2.PNG"/>
+      </a>
+
+      <a href="contact.html">
+        <img class="default" src="images/contact.PNG"/>
+        <img class="hover" src="images/contact2.PNG"/>
+      </a>
+
+
+    </div>
+
   </body>
-
-
 </html>
