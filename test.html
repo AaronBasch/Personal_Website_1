@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+
+<script>
+
+
+
+  function PlaySound(soundobj) {
+      var thissound=document.getElementById(soundobj);
+      thissound.currentTime = 0;
+      thissound.play();
+  }
+
+  function StopSound(soundobj) {
+      var thissound=document.getElementById(soundobj);
+      thissound.pause();
+      thissound.currentTime = 0;
+  }
+  </script>
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+    }
+    a {
+      font-size:0;
+      text-decoration: none;
+    }
+    a img {
+      width: 300px;
+    }
+    a img.hover {
+        display: none;
+
+    }
+    a img.default {
+        display: inherit;
+    }
+    a:hover img.hover {
+        display: inherit;
+    }
+    a:hover img.default {
+        display: none;
+    }
+    .links {
+      text-align: center;
+    }
+  </style>
+
+  </head>
+  <body>
+
+    <div class="title-image">
+      <img src="images/aaron-basch.PNG" alt="oh baby" class="center">
+    </div>
+    <div class="links">
+
+    <a onmouseover="PlaySound('sound1')" href="music.html">
+      <img class="default" src="images/music.PNG"/>
+      <img class="hover" src="images/music.GIF"/>
+    </a>
+
+
+    <a onmouseover="PlaySound('sound2')" href="about.html">
+      <img class="default" src="images/about.PNG"/>
+      <img class="hover" src="images/about.GIF"/>
+    </a>
+
+    <a onmouseover="PlaySound('sound3')" href="scores.html">
+      <img class="default" src="images/scores.PNG"/>
+      <img class="hover" src="images/scores.GIF"/>
+    </a>
+
+    <a onmouseover="PlaySound('sound4')" href="contact.html">
+      <img class="default" src="images/contact.PNG"/>
+      <img class="hover" src="images/about.GIF"/>
+    </a>
+
+
+
+
+    <audio id='sound1' src="audio/G.wav"/>
+    <audio id='sound2' src="audio/B.wav"/>
+    <audio id='sound3' src="audio/C.wav"/>
+    <audio id='sound4' src="audio/E.wav"/>
+
+    </div>
+  </body>
+
+  </html>
